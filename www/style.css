@@ -4,5 +4,5 @@ Author: Nicolaj Reck
 Author URI: http://nicolajreck.dk/
 */
 
-@import url(wp-content/themes/www/modules/node_modules/bootstrap/dist/css/bootstrap.min.css);
+@import url(/wp-content/themes/www/modules/node_modules/bootstrap/dist/css/bootstrap.min.css);
 @import url(build/style.min.css);
