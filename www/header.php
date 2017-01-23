@@ -28,18 +28,16 @@
 					<a class="navbar-brand" href="#">Project name</a>
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
-					<ul class="nav navbar-nav">
-						<?php /* Primary navigation */
-							wp_nav_menu( array(
-							  'theme_location' => 'primary',
-							  'depth' => 2,
-							  'container' => false,
-							  'menu_class' => 'nav',
-							  //Process nav menu using our custom nav walker
-							  'walker' => new wp_bootstrap_navwalker())
-							);
-						?>
-					</ul>
+					<?php /* Primary navigation */
+						wp_nav_menu( array(
+						  'theme_location' => 'primary',
+						  'depth' => 2,
+						  'container' => false,
+						  'menu_class' => 'nav navbar-nav',
+						  //Process nav menu using our custom nav walker
+						  'walker' => new wp_bootstrap_navwalker())
+						);
+					?>
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="../navbar/">Default</a></li>
 						<li class="active"><a href="./">Static top <span class="sr-only">(current)</span></a></li>
