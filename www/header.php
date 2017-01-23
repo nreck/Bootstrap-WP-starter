@@ -29,15 +29,16 @@
 				</div>
 				<div id="navbar" class="navbar-collapse collapse">
 					<?php
-                wp_nav_menu( array(
-                    'menu'       => 'primary',
-                    'depth'      => 2,
-                    'container'  => false,
-                    'menu_class' => 'nav navbar-nav',
-                    'fallback_cb' => 'wp_page_menu',
-                    'walker' => new wp_bootstrap_navwalker())
-                );
-            ?>
+wp_nav_menu( array(
+'theme_location' => 'primary',
+'depth' => 2,
+'container' => false,
+'menu_class' => 'nav navbar-nav',
+'fallback_cb' => 'wp_page_menu',
+//Process nav menu using our custom nav walker
+'walker' => new wp_bootstrap_navwalker())
+);
+?>
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="../navbar/">Default</a></li>
 						<li class="active"><a href="./">Static top <span class="sr-only">(current)</span></a></li>
