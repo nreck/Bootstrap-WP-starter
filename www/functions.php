@@ -8,7 +8,8 @@ require_once('modules/navwalker/wp_bootstrap_navwalker.php');
 
 //Register primary menu
 register_nav_menus( array(
-    'primary' => __( 'Header menu', 'www' ),
+    'primary' => __( 'Header left', 'www' ),
+    'secondary' => __( 'Header right', 'www' )
 ) );
 
 ?>
