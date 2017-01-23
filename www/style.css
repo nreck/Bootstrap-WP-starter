@@ -1,0 +1,8 @@
+/*
+Theme Name: Bootstrap WP starter
+Author: Nicolaj Reck
+Author URI: http://nicolajreck.dk/
+*/
+
+@import url(../node_modules/bootstrap/dist/bootstrap.min.css);
+@import url(build/style.min.css);
